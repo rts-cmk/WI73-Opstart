@@ -1,47 +1,37 @@
-# uge32
-``` javascript
 // Simpel function uden argumenter og returværdi
 function hello() {
     console.log("hello...");
 }
-hello(); 
-```
-# Hoisting
-``` javascript
+//* hello(); 
+
 // Hoisting - funktionen kan kaldes før den er deklareret
 // Funktionen kaldes med én værdi og modtages i ét argument
-sayHello('hoisting');
-```
-### say helo
-``` javascript
+//sayHello('hoisting');
+
 function sayHello(who) { // who er et argument
     console.log('hello', who);
 }
 
-sayHello('me');
+//* sayHello('me');
 
 // Hvis funktionen tildeles en variabel er der ingen hoisting
 
-nonHoisting('is it hoisting?'); // flyt ned under funktionen
+//* nonHoisting('is it hoisting?'); // flyt ned under funktionen
 
 nonHoisting = function nonHoisting(value) {
     console.log(value);
 }
-```
-# Arguments og default-value
-#### Function med to argumenter med hver en default-value
-#### herved kan funktionen kaldes med eller uden værdier
-``` javascript
+
+// Function med to argumenter med hver en default-value
+// herved kan funktionen kaldes med eller uden værdier
+// Funktionen returnerer her en værdi i stedet for at udskive den i funktionen
+
 function add(x = 0, y = 0) {
     console.log(`x=${x} y=${y} => x+y=`, x + y);
 }
-add();
-add(3, 8);
+//* add();
+//* add(3, 8);
 
-```
-# Array som argument
-#### Funktionen returnerer her en værdi i stedet for at udskive den i funktionen
-``` javascript
 // Argumenter kan være et array
 
 var fullname = function (name) {
@@ -49,11 +39,8 @@ var fullname = function (name) {
 }
 
 var person = ["Frank", "Goldmann"];
-console.log(fullname(person));
+//*  console.log(fullname(person));
 
-```
-# closure
-``` javascript
 // closure - function i function
 
 let eurokurs = function (kurs) {
@@ -63,28 +50,22 @@ let eurokurs = function (kurs) {
 }
 
 // eller en anden "smart" måde
-let smartEurokurs = kurs => kroner => kroner / kurs;
+//*let smartEurokurs = kurs => kroner => kroner / kurs;
 
 let omregning = eurokurs(7.51);
-console.log('kr.', omregning(100).toFixed(2));
-console.log('kr.', omregning(500).toFixed(2));
+//* console.log('kr.', omregning(100).toFixed(2));
+//* console.log('kr.', omregning(500).toFixed(2));
 
-```
-# Closure og callbacks
-``` javascript
 // closure og callback
 let pause = function (sekunder) {
     setTimeout(function () {
         console.log(`...der er nu gået ${sekunder}sekunder`)
     }, sekunder * 1000);
 };
-console.log('start');
+/*console.log('start');
 pause(2);
 console.log('end');
-
-```
-# Closure - flere functions i en function
-``` javascript
+*/
 // closure - flere functions i en function
 function calculator() {
     var result = 0;
@@ -107,5 +88,3 @@ calc.add(5);
 calc.add(3);
 calc.sub(4);
 console.log(calc.result());
-```
-`* _End of the history_`

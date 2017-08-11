@@ -1,0 +1,19 @@
+{
+  "name": "uge32",
+  "version": "1.0.0",
+  "description": "her er min kode til eksemplet linje 37\r ```javascript\r module.exports = {\r     // Beregner areal af ... til noget",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankgoldmann/uge32.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frankgoldmann/uge32/issues"
+  },
+  "homepage": "https://github.com/frankgoldmann/uge32#readme"
+}

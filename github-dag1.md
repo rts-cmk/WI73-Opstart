@@ -10,7 +10,7 @@ Til at starte med fokuseres der på meget grundlæggende principper som:
 
 Med de værktøjer kan vi komme rigtig langt her i starten af uddannelsen.
 
-## Tilmeldelse til den rette organisation.
+## Tilmeldelse til organisationen.
 
 På Github arbejder man i organisationer. En organisation er et sted på github.
 f.eks. er rts-cmk en organisation: http://github.com/rts-cmk
@@ -24,11 +24,13 @@ Vi har valgt at dele 73'er årgangen op i 3 organisationer, en for hvert hold.
 Det er her de første 2 ugers opgaver, og alle praktisk web opgaver igennem resten af uddannelsen, skal oprettes som repositories. 
 I løbet af uddannelsen vil der også være enkelte fag, hvor der bliver oprettet en ny orgnisation, specifikt til de opgaver det fag omhandler. 
 
-I skal tilmeldes den organisation der er oprettet til jeres hold. Benyt jeres rts-365.dk email til at oprette brugeren, eller dørg for at tilføje rts-365.dk mailen til jeres konto.  
+I skal tilmeldes den organisation der er oprettet til jeres hold. Vi sender en invitation på jeres rts-365.dk email.
 Vi har en regel på WI-HF, at man skal oprettes med sit rigtige navn. dvs du opretter din konto med dit fornavn+efternavn (f.eks. er mit: JackBaltzer).
 
 Ligeledes har vi en regel for navngivning af repositories.
-navnet skal være projektet/opgavens navn + dit eget navn (f.eks. hej-verden-jack-baltzer), hvis dit navn indeholder tegn ud over a-z, så benyt det der kommer tættest på (f.eks. *ae* for *æ*) .
+navnet skal være projektet/opgavens navn + dit eget navn (f.eks. hej-verden-jack-baltzer), hvis dit navn indeholder tegn ud over a-z, så benyt det der kommer tættest på (f.eks. *ae* for *æ*).
+
+
 
 Vi forbeholder os retten til at slette brugere og repo's der ikke opfylder de krav.
 

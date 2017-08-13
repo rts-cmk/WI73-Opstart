@@ -41,9 +41,11 @@ Det program benyttes til at holde styr på dine lokale repo's
 ## Første opgave.
 Nu hvor du er tilmeldt den korrekte organisation, skal du prøve at oprette et repository under den organisation.
 
-Inde på Githubs side, i den wi73 praktisk web organisation der hører til dit hold, skal du klikke på **new Repository** knappen og oprette et **igang-med-github** repo (husk at tilføje dit navn til sidst).
-Under oprettelsen sætter du flueben i **Initialize this repository with a README** samt vælger **Node** i **Add .gitignore**
-Klik på **Create Repository**
+Inde på Githubs side, i den wi73 praktisk web organisation der hører til dit hold, skal du klikke på **new Repository** knappen og oprette et nyt repo med navnet **igang-med-github** (husk at tilføje dit navn til sidst).
+
+Under oprettelsen sætter du flueben i **Initialize this repository with a README** samt vælger **Node** under **Add .gitignore** 
+
+TIlsidst, klik på **Create Repository**
 
 
 Når repo er oprettet, klikkes på **Clone or download** hvor der vælges **open in desktop**.

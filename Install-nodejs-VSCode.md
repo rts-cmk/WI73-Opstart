@@ -4,9 +4,9 @@ Download og installer [NodeJS](https://nodejs.org/en/download/)
 
 # Visual Studio Code (VSCode)
 Download og installer [VSCode](https://code.visualstudio.com/)
-### Gennemgang i undervisningen
+### Kort introduktion til
  * Den første kode og terminalen
- * Grundlæggende værktøjer VSCode
+ * Grundlæggende værktøjer i VSCode
  * Themes
  * Opsætning
  * Dokumentation

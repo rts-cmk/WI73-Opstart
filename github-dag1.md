@@ -25,14 +25,13 @@ Det er her de første 2 ugers opgaver, og alle praktisk web opgaver igennem rest
 I løbet af uddannelsen vil der også være enkelte fag, hvor der bliver oprettet en ny orgnisation, specifikt til de opgaver det fag omhandler. 
 
 I skal tilmeldes den organisation der er oprettet til jeres hold. Vi sender en invitation på jeres rts-365.dk email.
-Vi har en regel på WI-HF, at man skal oprettes med sit rigtige navn. dvs du opretter din konto med dit fornavn+efternavn (f.eks. er mit: JackBaltzer).
+Vi har en regel på WI-HF, at man skal oprettes med sit rigtige navn. dvs du opretter din konto med dit **fornavn+efternavn** (f.eks. er mit: JackBaltzer).
 
 Ligeledes har vi en regel for navngivning af repositories.
-navnet skal være projektet/opgavens navn + dit eget navn (f.eks. hej-verden-jack-baltzer), hvis dit navn indeholder tegn ud over a-z, så benyt det der kommer tættest på (f.eks. *ae* for *æ*).
+navnet skal være **projektet/opgavens navn + dit eget navn** (f.eks. hej-verden-jack-baltzer), hvis dit navn indeholder tegn ud over a-z, så benyt det der kommer tættest på (f.eks. *ae* for *æ*).
 
 
-
-Vi forbeholder os retten til at slette brugere og repo's der ikke opfylder de krav.
+*Vi forbeholder os retten til at slette brugere og repo's der ikke opfylder de krav.*
 
 ## Github Desktop
 Hent og installer [Github Desktop](https://desktop.github.com/)
@@ -52,7 +51,7 @@ Sørg for at placere klonen et sted der giver mening.
 
 
 
-Så Åbnes Visual Studio Code, og åben den mappe der indeholder dit nye repo.
+Åben Visual Studio Code, og åben den nye mappe der indeholder dit repo.
 
 
 Tilføj en ny fil, kald den **app.js**
@@ -62,6 +61,8 @@ tilføj denne console.log linje i toppen af den nye fil:
 ```javascript
 console.log('Hej verden!');
 ```
+
+her kan man selvfølgelig lige prøve at åbne konsollen i VScode, og skrive **node app** og se om den skriver **Hej verden!**
 
 ## Commit og Sync
 Vælg **source control** i visual studio code, og skriv en besked, f.eks. **Første commit!** og vælg **Commit All** fra menuen der gemmer sig under de tre ... 

@@ -39,4 +39,45 @@ Nu hvor du er tilmeldt den korrekte organisation, skal du prøve at oprette et r
 
 Inde på Githubs side, i den wi73 praktisk web organisation der hører til dit hold, skal du klikke på "new Repository" knappen og oprette et "hej-verden" repo (husk at tilføje dit navn til sidst).
 Under oprettelsen sætter du flueben i "Initialize this repository with a README" samt vælger "node" i "Add .gitignore" 
+Klik på "Create repository"
 
+
+Når repo er oprettet, klikkes på "Clone or download" hvor der vælges "open in desktop".
+Sørg for at placere klonen et sted der giver mening.
+
+
+
+Så Åbnes Visual Studio Code, og åben den mappe der indeholder dit nye repo.
+
+
+Tilføj en ny fil, kald den "app.js"
+
+
+tilføj denne console.log linje i toppen af den nye fil:
+```javascript
+console.log('Hej verden!');
+```
+
+## Commit og Sync
+Vælg "source control" i visual studio code, og skriv en besked, f.eks. "Første commit!" og vælg  "Commit All" fra menuen der gemmer sig under de tre ... 
+
+
+Gå tilbage til browseren, og opdater siden emd dit repo. (der burde ikke være nogle ændringer endnu).
+
+Commit All synkroniserer ikke med github, til det skal vi tilbage i Visual Studio Code, og vælge "Sync" fra samme menu hvor "Commit All" lå.
+
+Så kan du prøve at opdatere github siden igen, og se at nu ligger der en app.js.
+
+
+## Markdown
+En af de arbejdsopgaver du kommer til at bruge meget tid på, er at dokumentere og beskrive dine koder. 
+Du skal i *readme.md* filen lave din egen beskrivelse af hvordan du opretter et repository under wi73-github organisationen, så det opfylder de regler vi har været igennem.
+
+Du vælger selv om du vil sidde i Visual Studio Code, eller om du gør det via browseren på github.com 
+
+Du skal benytte *headers*, *emphasis*, *lists*, *links* samt *falvored markdown* (syntaks highlight) 
+Til syntakshightlight, der beskriver du kort, hvad console.log koden gør :+1: . 
+
+Husk at Commit (og Sync hvis du sidder i Visual Studio Code), så din readme.md bliver opdateret.
+
+Her er en online beskrivelse af [Github Markdown](https://guides.github.com/features/mastering-markdown/)

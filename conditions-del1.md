@@ -1,5 +1,0 @@
-# Betingede sætninger
-====
-
-
-

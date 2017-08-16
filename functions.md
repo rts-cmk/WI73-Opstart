@@ -19,6 +19,3 @@ Du kender til begrebet funktioner og kan anvende dem i fremtidige opgaver, herun
 ><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" target="_blank">MDN Functions</a>
 >
 ><a href="https://github.com/airbnb/javascript#functions" target="_blank">Airbnb Functions</a>
-
-<hr>
-# Introduktion

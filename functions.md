@@ -1,6 +1,7 @@
 # WI73 Intro til functions
 _v/Frank Goldmann 17. august 2017_
 <hr>
+
 ### Målsætning for dagen
 Du kender til begrebet funktioner og kan anvende dem i fremtidige opgaver, herunder begreberne
 > * `funktioner` _functions_

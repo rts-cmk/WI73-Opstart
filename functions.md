@@ -142,5 +142,41 @@ Opret en funktion som kan afkorte og returnere en ny streng
 * Gå ind på <a href= "https://www.w3schools.com/js/js_string_methods.asp" target="_blank">W3Schools.com | String Methods</a> og undersøg hvilken javascript-function du kan bruge til at afkorte en streng
 * Udbyg funktionen så den både modtager teksten og hvor meget den skal afkortes.
 * Du skal sikre, at funktionen ikke fejler, hvis den modtager en tekst som er kortere end det den skal afkortes til.
+<hr>
+
+# Array som argument
+Funktionen modtager her et array med 3 værdier
+
+Herefter returneres en sammensat streng i stedet for at udskrive i funktionen
+``` javascript
+// Argumenter kan være af typen array
+
+var profil = function (p) {
+    return p[0] + " " + p[1] + ": Født " + p[2]; // Returnerer tekst-strengen "Peter Pedal: Født 1941"
+}
+
+var idol = ["Peter", "Pedal", 1941];
+
+console.log(profil(idol)); // Udskriver "Peter Pedal: Født 1941"
+
+```
+# Øvelse 3
+Opret en funktion som returnerer _din_ profil svarende til eksemplet herover med Peter Pedal - men i en udvidet og meget gerne omskrevet version.
+
+1. Udskriften skal stadig foregå i konsollen
+2. Der skal indgå linjeskift i udskriften
+3. Der skal ligge en beregning af din alder ud fra din fødselsdag- og år
+4. Din profildata skal ligge i et array
+
+#### Ekstra udfordringer
+_Det forventes ikke at du kan løse følgende lige nu, men kig på dem og så løser vi dem i grupperarbejde senere._
+
+A. Opret et array med flere profiler
+
+B. Opret en ny funktion som udover arrayet modtager et index (id) for den profil der skal udskrives.
+
+C. Omskriv funktionen, så den udskriver alle profiler - hvis ikke der overføres et index/id
+
+
 
 

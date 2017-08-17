@@ -43,7 +43,7 @@ Eksempel: funktionen modtager tallet 3435,5 og returnerer teksten ”kr. 3.435,5
 
 ---
 
-### Udskriv Fibonacci tallene der ligger under 1000
+### Fibonacci sekvens
 Reglen for Fibonacci sekvensen er at det næste tal i rækken findes ved at lægge de to seneste tal sammen. 
 [Fibonacci på wikipedia](https://da.wikipedia.org/wiki/Fibonacci-tal)
 

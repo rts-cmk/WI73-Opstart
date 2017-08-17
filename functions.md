@@ -24,6 +24,7 @@ Du kender til begrebet funktioner og kan anvende dem i fremtidige opgaver, herun
 # Introduktion
 I dette modul vil vi se på egne funktioner (`functions`) og hvorledes de kan opbygges og anvendes i forskellige sammenhæng.
 
+
 Javascript har en lang række indbyggede funktioner såsom `console.log()`, hvor **log()** er en function til **console**. 
 
 Helt grundlæggende er en funktion en samling af instruktioner som udføres ved et kald til funktionens navn.
@@ -32,6 +33,7 @@ I eksemplet herunder er der oprettet en funktion med navnet **hello**.
 * Funktionen kaldes med funktionskaldet `hello()`.
 * Instruktionen `console.log("hello...")` udføres og programmet fortsætter nu _efter_ funktionskaldet `hello()`.
 ``` javascript
+
 // Simpel function uden argumenter og returværdi
 function hello() {
     console.log("hello...");
@@ -77,6 +79,9 @@ var sayHey = function sayHey(value) {
 * Alle tre værdier skal overføres via funktionskaldet til funktions argumenter for derefter at blive udskrevet.
 #### B. Regnefunktioner
 * Opret en en række funktioner som henholdsvis lægger to tal sammen, trækker to tal fra hinanden, ganger to tal og dividerer to tal.
+
+`i flg. øvelser oprettes nye funktioner`
+
 * Opret herefter en variabel kaldet `result` udenfor funktionerne, hvor resultatet løbende opdateres, efterhånden funktionerne anvendes.
 * Opret nu en række funktionskald til de forskellige funktioner til dine beregninger og udskriv resultatet.
 * Opret evt. et par ekstra funktioner til andre regnefunktioner, pi, kvadratrod etc. 

@@ -115,6 +115,7 @@ var sayWhat = value => console.log(value); // Udskriver teksten fra funktionskal
 
 sayWhat('var det lige lidt for smart?');
 
+
 ```
 <hr>
 
@@ -177,6 +178,81 @@ B. Opret en ny funktion som udover arrayet modtager et index (id) for den profil
 
 C. Omskriv funktionen, så den udskriver alle profiler - hvis ikke der overføres et index/id
 
+<hr>
+
+# Function in function
+(_Avanceret_)
+
+Funktioner kan godt gå hen og blive noget komplekse og svære at forstå, når vi som i eksemplet her skriver funktioner i funktioner.
+
+Selvom det er avanceret ser vi lige på det sammen. I den kommende undervisning går vi i dybden og snakker begreber som f.eks. `closure`.
+
+**Eksemplet forklares i undervisningen!**
+
+``` javascript
+// closure - function i function
+
+let eurokurs = function (kurs) {
+    return function (kroner) {
+        return kroner / kurs;
+    }
+}
+
+// eller en anden "smart" måde
+let smartEurokurs = kurs => kroner => kroner / kurs;
+
+let omregning = eurokurs(7.51);
+console.log('kr.', omregning(100).toFixed(2));
+console.log('kr.', omregning(500).toFixed(2));
+
+```
+<hr>
+
+#  Flere funktioner i samme funktion 
+
+(_Avanceret_)
+
+Øvelsen fra tidligere med flere regnearter kan gøres lidt mere kompleks, som vist i eksemplet herunder.
+
+Eksemplet har én funktion kaldet `calculator`, som tilbyder hele 3 forskellige funktioner - en kaldet `add`, en anden kaldet `sub` og endelig en kaldet `result` 
+
+Efter funktionen oprettes en variabel kaldet `calc` som tildeles funktionen `calculator`. Da variablen nu er en **funktion** kan dens **indbyggede funktioner** tilgås via variablen `calc`
+``` javascript
+
+function calculator() {
+    var result = 0;
+    return {
+        add: function (x) {
+            result += x;
+        },
+        sub: function (x) {
+            result -= x;
+        },
+        result: function () {
+            return result;
+        }
+    }
+}
+
+var calc = calculator();
+calc.add(2);
+calc.add(5);
+calc.add(3);
+calc.sub(4);
+console.log(calc.result());
+```
+# Øvelse 4
+Udvid funktionen **calculator** med flere funktioner som f.eks.
+* Gange
+* Dividere
+* pi
+* kvadratrod
+* Udskriv med decimaler
+* ... og/eller andre du finder på
+
+<hr>
+Ikke mere om funktioner nu - men husk nu din dokumentation i din mark-down fil
+<hr> 
 
 
 

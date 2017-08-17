@@ -22,6 +22,7 @@ Du kender til begrebet funktioner og kan anvende dem i fremtidige opgaver, herun
 <hr>
 
 # Introduktion
+
 I dette modul vil vi se på egne funktioner (`functions`) og hvorledes de kan opbygges og anvendes i forskellige sammenhæng.
 
 
@@ -85,5 +86,61 @@ var sayHey = function sayHey(value) {
 * Opret herefter en variabel kaldet `result` udenfor funktionerne, hvor resultatet løbende opdateres, efterhånden funktionerne anvendes.
 * Opret nu en række funktionskald til de forskellige funktioner til dine beregninger og udskriv resultatet.
 * Opret evt. et par ekstra funktioner til andre regnefunktioner, pi, kvadratrod etc. 
+
+<hr>
+
+# Anonyme funktioner
+En anonym funktion har som begrebet siger intet navn. Men de kan med fordel anvendes i mange sammenhæng.
+
+I eksemplet herunder oprettes en variabel som tildeles en funktion - her en anonym funktion.
+
+Funktionen kaldes på nøjagtig samme måde, blot ved at anvende variablens navn i stedet for funktiones navn - hvis altå den har et navn (som eksemplet ovenover `sayHey`)
+``` javascript
+// Anonym funktion
+var sayHeyAnonym = function (value) {
+    console.log(value); // Udskriver "test af anonym function"
+}
+
+sayHeyAnonym('test af anonym funktion');
+```
+<hr>
+
+# The arrow function expression (=>)
+>Lad det være sagt fra starten: Det er ikke hensigten at I skal lave funktioner på denne måde fra start.
+>Men I vil støde ind i eksempler som dette, når i kigger på nettet - og det er smart, når du er **helt** fortrolig med funktioner.
+>
+``` javascript
+// Arrow function
+var sayWhat = value => console.log(value); // Udskriver teksten fra funktionskaldet
+
+sayWhat('var det lige lidt for smart?');
+
+```
+<hr>
+
+# Arguments og default-values
+Hvis der er flere arguments i funtionen skal de adskilles af et komma - og ligeledes kaldes komma adskilt.
+
+I eksemplet herunder er der to arguments, et kaldet x og et andet kaldet y.
+
+Funktion har to argumenter med hver en default-value. Nu kan funktionen kaldes _med_ eller _uden_ værdier i funktionskaldet.
+
+I udskrivningen med `console.log` andvendes en tekst-streng indeholdende variablene `${x}` og `${y}`Husk dog at der skal anvendes ( ` ) _Grave Accent_ eller _Angled Apostraphe_
+``` javascript
+function add(x = 0, y = 0) {
+    console.log(`x er lig med ${x} og y=${y}. Sum: `, x + y);
+}
+ 
+add(); //Udskriver "x er lig med 0 og y=0. Sum:  0"
+add(3, 8); //Udskriver "x er lig med 3 og y=8. Sum:  11"
+
+
+```
+# Øvelse 2
+
+Opret en funktion som kan afkorte og returnere en ny streng
+* Gå ind på <a href= "https://www.w3schools.com/js/js_string_methods.asp" target="_blank">W3Schools.com | String Methods</a> og undersøg hvilken javascript-function du kan bruge til at afkorte en streng
+* Udbyg funktionen så den både modtager teksten og hvor meget den skal afkortes.
+* Du skal sikre, at funktionen ikke fejler, hvis den modtager en tekst som er kortere end det den skal afkortes til.
 
 

@@ -200,21 +200,17 @@ var adresse = "";
 
 var fejlbeskeder = "";
 
-if (navn == "")
-{
+if (navn == "") {
 	fejlbeskeder = "Du skal udfylde navn feltet\n";
 }
 
-if (alder == "")
-{
+if (alder == "") {
 	fejlbeskeder = "Du skal udfylde alder feltet\n";
 }
 
-if (adresse == "")
-{
+if (adresse == "") {
 	fejlbeskeder = "Du skal udfylde adresse feltet\n";
 }
-
 
 console.log (fejlbeskeder);
 ```
@@ -235,21 +231,17 @@ var email = "";
 
 var fejlbeskeder = [];
 
-if (brugernavn == "")
-{
+if (brugernavn == "") {
 	fejlbeskeder = ["Du skal udfylde brugernavn feltet\n"];
 }
 
-if (password == "")
-{
+if (password == "") {
 	fejlbeskeder = ["Du skal udfylde password feltet\n"];
 }
 
-if (email == "")
-{
+if (email == "") {
 	fejlbeskeder = ["Du skal udfylde email feltet\n"];
 }
-
 
 console.log (fejlbeskeder);
 ```
@@ -263,8 +255,7 @@ Den viser en fejl, når den udleverede kode udføres. Jeg forsøger bare at defi
 Fix problemet og forklar hvad der var galt - bare skriv en kommentar i koden.
 
 ```javascript
-function sammensaetTekst ("forste", "anden")
-{
+function sammensaetTekst ("forste", "anden") {
 	return "forste" + " " + "anden";
 }
 

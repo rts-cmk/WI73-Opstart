@@ -4,8 +4,7 @@ var profilopgave = function (p, id = -1) {
     if (id === -1) {
         profil = "alle profiler\n";
         p.forEach(function (element, index) {
-            //profil += `${element[0]} ${element[1]} ${element[2]}  "\n"`;
-            element.forEach(function (item) {
+          element.forEach(function (item) {
                 profil += `${item} `;
             });
             profil += "\n";

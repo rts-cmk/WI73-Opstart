@@ -13,6 +13,17 @@ opgave_fjern_mellemrum_foer_og_efter_en_tekst.js
 
 ---
 
+### Forbind med Slack
+Alle skal være på Slack, så din opgave er ganske enkelt at gå på https://rts-cmk-wi73.slack.com og skriv en direkte-besked til din lærer.
+
+* 73a skriver til Frank 
+* 73b skriver til Ady 
+* 73c skriver til Jack
+
+Det er helt fint at sige "Hej" eller "slack opgave" eller noget andet enkelt. Det er for at sikre I alle er kommet på slack. 
+
+---
+
 ### BMI 
 Opret en funktion som beregner BMI ud fra højde og vægt. 
 Funktionen skal returnere en af teksterne ud fra formlen du finder på http://www.bmitest.dk/ 

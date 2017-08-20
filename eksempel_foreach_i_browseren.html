@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScript forEach i browseren - Eksempel</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+
+			<!-- ============================================== -->
+
+
+			<h1>JavaScript forEach i browseren - Eksempel</h1>
+
+			<p>Følgende liste er blevet genereret vha. en <b>forEach-løkke</b> i JavaScript. <br>Indholdet kommer fra et <b>Array</b>.</p>
+
+			<!-- Indholdet af følgende <ul> vil blive genereret via JavaScript  -->
+			<ul id="udskrift">
+				<li style='color: red'>(Hvis du kan se denne besked i browseren, så er der noget galt)</li>
+			</ul>
+
+			<i>Hvis du ikke kan se farve-navnene i ovenstående liste, så tjek om der er nogen <b>fejlbeskeder i browserens konsol<b>.</i>
+
+			<script>
+				// Gør en reference klar til HTML elementet, som har id'et #udskrift
+				var udskrift_html = document.getElementById("udskrift");
+
+				// Opretter et array med data
+				var farver_array = [
+					"Rød",
+					"Grøn",
+					"Blå"
+				];
+
+				// Tømmer udskrift-elementet (<ul> elementet)
+				udskrift_html.innerHTML = "";
+
+				// Denne forEach løber farver array'et igennem.
+				// For hver farve i vores array,
+				// indsætter den en ny <li> inden i vores <ul>
+				farver_array.forEach (function (enFarve, index) {
+					udskrift_html.innerHTML += "<li>" + enFarve + "</li>"; 
+				});
+
+				// ======================================
+				
+				// Udskriver farver array'et i browserens konsol.
+				// (tryk F12 i de fleste browsere og find fanebladet "konsol" / "console")
+				console.log (farver_array);
+			</script>
+
+
+			<!-- ============================================== -->
+
+		</div>
+	</body>
+</html>

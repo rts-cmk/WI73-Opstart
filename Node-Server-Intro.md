@@ -40,5 +40,5 @@ const server = http.createServer(function (req, res) {
     res.end();
 });
 ```
-> Det her er blot et ekempel på hvordan man _kan_ sende html til browseren.<br>
-> I kommende undervisning lærer vi andre og smartere måder
+> Det her var blot et ekempel på hvordan man _kan_ sende html til browseren.<br>
+> I det følgende skal vi udvide eksemplet, så der kan håndteres flere "sider"

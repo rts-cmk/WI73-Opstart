@@ -91,3 +91,60 @@ module.exports = {
 	}
 };
 ```
+# NPM (Node Packet Manager)
+I foregående har vi oprettet vores eget `module` og anvend et indbygget `module` kaldet **url**<br>
+Det er heldigvis ikke alle modules der er implementeret i nodejs for så ville systemet nærmest blive kvalt i kode som aldrig blev brugt. I stedet er det sådan, at vi selv kan tilføje de modules vi har brug for.<br>
+
+Du kan læse om de forskellige modules på https://www.npmjs.com/ og du kan installere dem gennem konsollen<br>
+#### init
+Først genererer vi en **package.json** fil via kommandoen **npm init** som typisk ser således ud.
+```javascript
+{
+  "name": "server-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+script
+
+#### gitignore
+Inden du installerer det første module bør du oprette filen `.gitignore` hvis du ikke allerede har den gennem et repository via github. I filen skal der som minimum stå
+> node_modules<br>
+> *.log
+
+Den gør at du ikke får hele node_modules og eventuelle .log filer med når du pusher til github.
+#### nodemon
+Nu installerer vi det første `module` kaldet **nodemon**, som har en hjælpefunktion til at genstarte vores server, når en js-fil er ændret og gemt.<br>
+* Kør `npm install nodemon --save` for at gemme i applikationen. Modulet kan også gemmes globalt, men ikke lige nu.
+* Læg mærke til at der er oprettet en mappe kalde **node_modules**, som indeholder alle de modules som er tilføjet gennem npm - lokalt med instruktionen `--save` - brug lige lidt tid på at se hvad der ligger i mappen, herunder mark-down.
+* I package.json er tilføjet `"start": "node server.js"`, som betyder, at der med kommandoen `npm start` starter serveren. Det er der umiddelbart ikke den store gevinst ved, men hvis du ændrer det til `"start": "nodemon server.js"` vil serveren genstarte ved ændring af js-filerne.
+* nodemon ligger nu som dependencies
+
+_package.json_
+```javascript
+{
+  "name": "uge33",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
+```
+
+# Øvelse
+Opbyg et simpelt site med navigation mellem siderne.<br>
+Husk at dokumentere i mark-down
